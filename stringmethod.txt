@@ -1,0 +1,28 @@
+import  java.util.Scanner;
+
+public class stringmethod {
+    public static void main(String[] args) {
+        // String s="welcome";
+        // System.out.println(s);
+        String s1=new String("welcome");
+        System.out.println(s1);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string: ");
+        String s=sc.nextLine();
+        System.out.println(s);
+        System.out.println(s.charAt(0));    //chart at index
+        System.out.println(s.length());            //length of string
+        System.out.println(s.substring(3));    //substring
+        System.out.println(s.substring(0,2));
+        System.out.println(s.equals(s1));          //equal strings
+        System.out.println(s.concat(" "+s1));  //concat the string
+        System.out.println(s.isEmpty());
+        System.out.println(s.replace('w', 'e'));
+        System.out.println(s.replace("welcome","goodbye"));   //replace string
+        System.out.println(s.toUpperCase());
+        System.out.println(s.toLowerCase());
+        System.err.println(s1.compareTo(s));
+
+    }
+    
+}

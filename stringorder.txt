@@ -1,0 +1,37 @@
+import java.util.*;
+import javax.lang.model.util.ElementScanner14;
+
+public class stringorder{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        List<String>names=new ArrayList<>();
+        while(true){
+        System.out.print("enter the name:");
+        String name=sc.nextLine();
+        if(name.equalsIgnoreCase("stop"))
+        {
+            break;
+        }
+        name.add(name);
+    }
+    System.out.println("enter the asc for ascending:");
+    String sortOrder=Scanner.nextLine();
+    if(sortOrder.equalsIgnoreCase("asc"))
+    {
+        Collections.sort(names);
+    }
+    else if(sortOrder.equalsIgnoreCase("des"))
+    {
+        Collections.sort(names,Collections.reverseOrder());
+    }
+    else {
+        System.err.println("INVALID INPUT");
+    }
+   for(String name:names)
+
+   {
+    System.out.print(name);
+   }
+
+    }
+}
